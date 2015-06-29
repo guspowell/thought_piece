@@ -8,15 +8,30 @@
 			"author2": "Second Author",
 			"author3": "Third Author",
 			"author4": "Fourth Author"
-		}
-	],
+		},
+	]
 	"publish-date": "DECEMBER 24, 2014",
-	"main-container": [
+	"article": [
 		{
 			"heading": "THE VIOLENCE OF THE NEW THE BEST INVENTIONS SPRING FROM NECESSITY, NOT TECHNOLOGY",
-			"large-article-image": "",
-			"quote1": "He often claimed that his biggest single contribution to the development of practical electronics was his sand-exluding technology for electrical relays... stretching a condom over them.",
-			"quote2": "Inventors, that name we'd almost forgotten in our haste to adopt marketing buzzwords, are on the rise again. Inventors- people who spot needs and then get out the toilet rolls and sticky-backed plastic to nail the theory."
+			"introduction": "",
+			"section": {
+				"1": {
+					"sub-heading": "SLOW-MO EXPLOSIONS",
+					"text" : "",
+					"quote": "He often claimed that his biggest single contribution to the development of practical electronics was his sand-exluding technology for electrical relays... stretching a condom over them."
+				},
+				"2": {
+					"sub-heading": "HACKING THE FUTURE",
+					"text" : "",
+					"quote": "Inventors, that name we'd almost forgotten in our haste to adopt marketing buzzwords, are on the rise again. Inventors- people who spot needs and then get out the toilet rolls and sticky-backed plastic to nail the theory."
+				},
+				"3": {
+					"sub-heading": "PRAGMATISTS.<br>BROAD-BANDWIDTH THINKERS.<br>TINKERERS. CAN DO-ISTS",
+					"text" : "",
+					"quote": ""
+				}
+			}
 		}
 	]
 }

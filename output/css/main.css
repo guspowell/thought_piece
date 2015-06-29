@@ -100,3 +100,19 @@ h1 {
   color: white;
   background-color: black;
 }
+#bottom-navigation.container .previous-article-text {
+  float: left;
+  margin-left: 20px;
+}
+#bottom-navigation.container img.arrow.previous {
+  float: left;
+  height: 100px;
+}
+#bottom-navigation.container .next-article-text {
+  float: right;
+  margin-right: 20px;
+}
+#bottom-navigation.container img.arrow.next {
+  float: right;
+  height: 100px;
+}
