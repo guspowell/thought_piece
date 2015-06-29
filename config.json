@@ -10,7 +10,7 @@
 	"bundles": {
 		"/css/all.css": [
 			"/css/normalize.css",
-			"/css/main.css",
+			"/css/main.less",
 			"/css/site.less"
 		]
 	}
