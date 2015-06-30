@@ -57,6 +57,16 @@ h1 {
   margin-top: 50px;
   color: white;
 }
+.information-box .row {
+  margin-bottom: 20px;
+}
+.information-box img {
+  display: inline-block;
+  float: left;
+  width: 35px;
+  height: 30px;
+  margin-right: 20px;
+}
 @media screen and (max-width: 736px) {
   #introduction-container .information-box {
     display: none;
@@ -129,7 +139,7 @@ h1 {
   float: left;
   margin-left: 20px;
   height: 100%;
-  vertical-align: middle;
+  width: 80%;
 }
 #bottom-navigation.container img.arrow.previous {
   float: left;
@@ -138,6 +148,7 @@ h1 {
   float: right;
   text-align: right;
   margin-right: 20px;
+  width: 80%;
 }
 #bottom-navigation.container img.arrow.next {
   float: right;
