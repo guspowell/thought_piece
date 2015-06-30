@@ -33,30 +33,5 @@
 				}
 			}
 		}
-	],
-	"other-articles": [
-		{
-			"article-1": [
-				{
-					"image": "",
-					"type": "",
-					"title": "AUTOMATIC: FOR THE PEOPLE?",
-				}
-			],
-			"article-2": [
-				{
-					"image": "",
-					"type": "",
-					"title": "CES 2015- TOP PICKS",
-				}
-			],
-			"article-3": [
-				{
-					"image": "",
-					"type": "",
-					"title": "INTRODUCING OUR NEW DERBY TRANSPORT OFFICE",
-				}
-			]
-		}
 	]
 }

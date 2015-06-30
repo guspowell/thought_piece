@@ -21,7 +21,7 @@ h1 {
 }
 .container {
   width: 100%;
-  padding: 30px 130px;
+  padding: 75px 10%;
 }
 .primary-button {
   font-weight: 600;
@@ -57,6 +57,11 @@ h1 {
   margin-top: 50px;
   color: white;
 }
+@media screen and (max-width: 736px) {
+  #introduction-container .information-box {
+    display: none;
+  }
+}
 #introduction-container .primary-button.learn-more {
   margin: 0 auto;
   display: block;
@@ -71,6 +76,11 @@ h1 {
 #main-content .large-article-image {
   height: 400px;
   background-size: cover;
+}
+@media screen and (max-width: 736px) {
+  #main-content .large-article-image {
+    height: 200px;
+  }
 }
 #main-content .quote {
   width: 80%;
@@ -87,6 +97,21 @@ h1 {
   float: right;
   margin-right: -30%;
 }
+@media screen and (max-width: 736px) {
+  #main-content .quote {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+  #main-content .quote.right {
+    float: none;
+    margin: 20px 0 20px 0;
+  }
+  #main-content .quote.left {
+    float: none;
+    margin: 20px 0 20px 0;
+  }
+}
 #main-content .small-image {
   height: 150px;
   background-size: cover;
@@ -100,9 +125,6 @@ h1 {
   color: white;
   background-color: black;
 }
-#bottom-navigation .previous {
-  height: 100px;
-}
 #bottom-navigation.container .previous-article-text {
   float: left;
   margin-left: 20px;
@@ -111,10 +133,10 @@ h1 {
 }
 #bottom-navigation.container img.arrow.previous {
   float: left;
-  height: 75px;
 }
 #bottom-navigation.container .next-article-text {
   float: right;
+  text-align: right;
   margin-right: 20px;
 }
 #bottom-navigation.container img.arrow.next {
@@ -139,7 +161,12 @@ h1 {
   height: 150px;
   margin-top: 10px;
 }
-#bottom-navigation .article-title {
+#bottom-navigation .article-information {
   height: 150px;
   background: #EEEEEE;
+}
+#bottom-navigation .article-information .article-type {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 10px;
 }
