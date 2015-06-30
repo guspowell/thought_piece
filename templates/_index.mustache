@@ -136,85 +136,115 @@
 <div class="container" id="bottom-navigation">
 	<div class="row">
 
-		<div class="col-md-5 previous">
-			<img class="arrow previous" src="./images/left-arrow.png"/>
-			<div class="previous-article-text">
-				<span style="font-weight:200">Next</span><br>
-				RETHINKING CHRISTMAS FOOD WASTE
+		<a href="#">
+			<div class="col-md-5 previous">
+				<img class="arrow previous" src="./images/left-arrow.png"/>
+				<div class="previous-article-text">
+					<span style="font-weight:200">Next</span><br>
+					RETHINKING CHRISTMAS FOOD WASTE
+				</div>
 			</div>
-		</div>
+		</a>
 
-		<div class="col-md-5 col-md-offset-2 next">
-			<img class="arrow next" src="./images/right-arrow.png"/>
-			<div class="next-article-text">
-				<span style="font-weight:200">Previous</span><br>
-				RETHINKING CHRISTMAS FOOD WASTE
+		<a href="#">
+			<div class="col-md-5 col-md-offset-2 next">
+				<img class="arrow next" src="./images/right-arrow.png"/>
+				<div class="next-article-text">
+					<span style="font-weight:200">Previous</span><br>
+					RETHINKING CHRISTMAS FOOD WASTE
+				</div>
 			</div>
-		</div>
+		</a>
 
 		<div class="container related-stories">
 			<div class="row title">
 				Related Stories
 			</div>
 
+			{{ #other-articles }}
+
 			<div class="row">
-				<div class="col-md-3 article">
-					<div class="article-wrapper">
-						<div class="row">
-							<div class="col-md-12 article-image" style="background-image: url(./images/test-image.jpg); background-size: cover;">
+
+				{{ #article-1 }}
+				<a href="#">
+					<div class="col-md-3 article">
+						<div class="article-wrapper">
+							<div class="row">
+								<div class="col-md-12 article-image" style="background-image: url( {{ image }} ); background-size: cover;">
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 article-information">
-								<div class="article-type">Long Read</div>
-								<div class="article-title">AUTOMATIC: FOR THE PEOPLE?</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 article">
-					<div class="article-wrapper">
-						<div class="row">
-							<div class="col-md-12 article-image" style="background-image: url(./images/test-image.jpg); background-size: cover;">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 article-information">
-								<div class="article-type">Long Read</div>
-								<div class="article-title">AUTOMATIC: FOR THE PEOPLE?</div>
+							<div class="row">
+								<div class="col-md-12 article-information">
+									<div class="article-type">{{ type }}</div>
+									<div class="article-title">{{ title }}</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 article">
-					<div class="article-wrapper">
-						<div class="row">
-							<div class="col-md-12 article-image" style="background-image: url(./images/test-image.jpg); background-size: cover;">
+				</a>
+				{{ /article-1 }}
+
+				{{ #article-2 }}
+				<a href="#">
+					<div class="col-md-3 article">
+						<div class="article-wrapper">
+							<div class="row">
+								<div class="col-md-12 article-image" style="background-image: url( {{ image }} ); background-size: cover;">
+								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 article-information">
-								<div class="article-type">Long Read</div>
-								<div class="article-title">AUTOMATIC: FOR THE PEOPLE?</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 article">
-					<div class="article-wrapper">
-						<div class="row">
-							<div class="col-md-12 article-image" style="background-image: url(./images/test-image.jpg); background-size: cover;">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 article-information">
-								<div class="article-type">Long Read</div>
-								<div class="article-title">AUTOMATIC: FOR THE PEOPLE?</div>
+							<div class="row">
+								<div class="col-md-12 article-information">
+									<div class="article-type">{{ type }}</div>
+									<div class="article-title">{{ title }}</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</a>
+				{{ /article-2 }}
+
+				{{ #article-3 }}
+				<a href="#">
+					<div class="col-md-3 article">
+						<div class="article-wrapper">
+							<div class="row">
+								<div class="col-md-12 article-image" style="background-image: url( {{ image }} ); background-size: cover;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 article-information">
+									<div class="article-type">{{ type }}</div>
+									<div class="article-title">{{ title }}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				{{ /article-3 }}
+
+				{{ #article-4 }}
+				<a href="#">
+					<div class="col-md-3 article">
+						<div class="article-wrapper">
+							<div class="row">
+								<div class="col-md-12 article-image" style="background-image: url( {{ image }} ); background-size: cover;">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 article-information">
+									<div class="article-type">{{ type }}</div>
+									<div class="article-title">{{ title }}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				{{ /article-4 }}
+
 			</div>
+
+			{{ /other-articles }}
+
 
 		</div>
 

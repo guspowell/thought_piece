@@ -33,5 +33,37 @@
 				}
 			}
 		}
+	],
+	"other-articles": [
+		{
+			"article-1": [
+				{
+					"title": "AUTOMATIC: FOR THE PEOPLE",
+					"type" : "Long Read",
+					"image": "./images/test-image.jpg"
+				}
+			],
+			"article-2": [
+				{
+					"title": "CES 2015- TOP PICK",
+					"type" : "Long Read",
+					"image": "./images/test-image.jpg"
+				}
+			],
+			"article-3": [
+				{
+					"title": "INTRODUCING OUR NEW DERBY TRANSPORT OFFICE",
+					"type" : "Update",
+					"image": "./images/test-image.jpg"
+				}
+			],
+			"article-4": [
+				{
+					"title": "RETHINKING CHRISTMAS FOOD WASTE",
+					"type" : "Concept",
+					"image": "./images/test-image.jpg"
+				}
+			]
+		}
 	]
 }
