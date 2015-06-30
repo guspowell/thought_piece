@@ -160,13 +160,25 @@ a:hover {
   color: white;
   background-color: black;
 }
-#bottom-navigation .previous {
+
+//****************** BOTTOM NAVIGATION ****************//
+
+#bottom-navigation.container .previous {
+  display: inline;
+  position: relative;
+    left: 0;
+}
+#bottom-navigation.container .next {
+  display: inline;
+  position: relative;
+    right: 0;
 }
 #bottom-navigation.container .previous-article-text {
   float: left;
+  text-align: left;
   margin-left: 20px;
   height: 100%;
-  width: 80%;
+  width: 30%;
 }
 #bottom-navigation.container img.arrow.previous {
   float: left;
@@ -175,7 +187,8 @@ a:hover {
   float: right;
   text-align: right;
   margin-right: 20px;
-  width: 80%;
+  height: 100%;
+  width: 30%;
 }
 #bottom-navigation.container img.arrow.next {
   float: right;
@@ -189,15 +202,15 @@ a:hover {
   text-align: center;
 }
 #bottom-navigation .related-stories .title {
-  margin-top: 50px;
+  margin-top: 100px;
   border-bottom: 1px solid @line-color;
+  margin-bottom: 10px;
 }
 #bottom-navigation .article-wrapper {
   margin: 5px;
 }
 #bottom-navigation .article-image {
   height: 150px;
-  margin-top: 10px;
 }
 #bottom-navigation .article-information {
   height: 150px;
@@ -207,4 +220,48 @@ a:hover {
   font-size: 14px;
   font-weight: 200;
   margin-top: 10px;
+}
+#bottom-navigation .overlay {
+  display: none;
+}
+@media screen and (max-width: 736px) {
+  #bottom-navigation.container .previous-article-text {
+    width: 125px;
+    font-size: 12px;
+  }
+  #bottom-navigation.container .next-article-text {
+    width: 125px;
+    font-size: 12px;
+  }
+  #bottom-navigation .article-wrapper {
+    margin: 10px 0 10px 0;
+  }
+  #bottom-navigation .article-image {
+    height: 200px;
+  }
+  #bottom-navigation .related-stories .title {
+    margin-top: 200px;
+  }
+  #bottom-navigation .article-information {
+    display: none;
+  }
+  #bottom-navigation .article-information.overlay {
+    display: inline;
+    color: white;
+  }
+  #bottom-navigation .overlay {
+    display: inline;
+    background: black;
+    opacity: 0.5;
+  }
+  #bottom-navigation .article-information.overlay .article-type {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    z-index: 10;
+  }
+  #bottom-navigation .article-information.overlay .article-title {
+    font-size: 25px;
+    margin-top: 10px;
+  }
 }

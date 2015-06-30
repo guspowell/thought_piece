@@ -11,6 +11,7 @@
 		"/css/all.css": [
 			"/css/normalize.css",
 			"/css/main.less",
+			"/css/bottom-navigation.less",
 			"/css/site.less"
 		]
 	}
