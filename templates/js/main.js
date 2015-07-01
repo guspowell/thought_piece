@@ -10,7 +10,6 @@ function verticallyAlignTitleContent() {
     var containerHeight = $("#title-container").height();
     var contentHeight = $("#title-container .title-content").height();
     var topMargin = (containerHeight/2) - (contentHeight/2);
-    console.log(topMargin);
     $("#title-container .title-content").css("margin-top", topMargin);
 }
 
@@ -27,7 +26,7 @@ function setOtherArticleArrowHeight() {
 function verticallyAlignOverlayText() {
   $("#bottom-navigation .article").each(function() {
     var containerHeight = $(this).height();
-    var textHeight = $(this).find(".article-information-mobile").height();
+    var textHeight = $(this).find(".article-information-mobile .article-title").height() + $(".article-information-mobile .article-type").height() ;
     var padding = 20;
     var topMargin = (containerHeight/2) - (textHeight/2) - padding;
     $(this).find(".article-information-mobile").css("top", topMargin);
