@@ -33,6 +33,28 @@ a:hover {
  color: black;
 }
 
+.navbar {
+  background-color: rgba(2, 2, 2, 0.8);
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  height: 50px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-weight: 100;
+    color: white;
+
+  }
+}
+
 .container {
   width: 100%;
   // padding: 30px 130px;
@@ -64,17 +86,24 @@ a:hover {
     top: 0;
     left: 0;
   background-color: @color;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 #title-container {
   text-align: center;
   position: relative;
   color: white;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+#title-container .title-content {
+  position: absolute;
 }
 
 #introduction-container {
   background-color: @color;
+  padding-top: 25px;
 }
 #introduction-container .content {
   margin-top: 50px;
@@ -101,15 +130,35 @@ a:hover {
 }
 
 #main-content .header-text {
-	text-align: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  color: @color;
+  text-transform: uppercase;
+}
+#main-content .sub-header-text {
+	text-align: left;
   font-size: 30px;
 	line-height: 60px;
-  margin: 20px 0 100px 0;
   color: @color;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 736px) {
+  #main-content .sub-header-text {
+    line-height: 5e0px;
+  }
+}
+#main-content .introduction {
+	margin-top: 100px;
+  margin-bottom: 50px;
 }
 #main-content .large-article-image {
   height: 400px;
   background-size: cover;
+  padding: 0;
+  margin: 20px 0;
 }
 @media screen and (max-width: 736px) {
   #main-content .large-article-image {
@@ -154,7 +203,11 @@ a:hover {
   background-size: cover;
   margin: 30px 0;
 }
-
+@media screen and (max-width: 736px) {
+  #main-content .small-image {
+    margin: 5px 0;
+  }
+}
 #bottom-container.container {
   background-color: @color;
   color: white;

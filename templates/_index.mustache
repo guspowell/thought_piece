@@ -1,6 +1,12 @@
-<div class="container" id="title-container">
+<nav class="navbar navbar-fixed-top">
+		<div class="navbar-header">
+			<a href="http://www.seymourpowell.com/" class="navbar-brand" href="#">seymourpowell</a>
+		</div>
+</nav>
+
+<div class="container" id="title-container" style="background-image: url({{ title-image }})">
 	<div class="overlay"></div>
-	<div class="col-md-12">
+	<div class="col-md-12 title-content">
 		<h1>{{ page-title }}</h1>
 		<button type="button" class="primary-button">Watch Video</button>
 	</div>
@@ -17,7 +23,9 @@
 					<div class="col-md-12" id="author">
 						<strong>Future Probe</strong><br>
 						{{ #team }}
-						{{ author1 }},<br> {{ author2 }},<br> {{ author3 }}<br>
+						<div class="author">{{ author1 }}</div>
+						<div class="author">{{ author2 }}</div>
+						<div class="author">{{ author3 }}</div>
 						{{ /team }}
 						First Published: {{ publish-date }}<br>
 					</div>
@@ -46,66 +54,91 @@
 
 	<div class="header-text">{{ heading }}</div>
 
-	<div class="col-md-8 col-md-offset-2">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
 
-		<div class="row">
-			<div class="col-md-12">
-				<div class="large-article-image" style="background-image: {{ large-article-image }}">
-					<div class="overlay"></div>
-				</div>
+	<div class="col-md-8 col-md-offset-2">
+
+		<div class="col-md-12 introduction">{{ introduction }}</div>
+
+		{{ #section }}
+
+		{{ #1 }}
+		<div class="col-md-12 sub-header-text">{{ sub-heading }}</div>
+		<div class="col-md-12 paragraph">
+			In many cases we no longer have to say, ‘If only we had the technology to do this,’ because we already do. We have to say, ‘What is the real need here? And, of a thousand ways of achieving it, which shall we choose?’<br><br>
+			Think of this as a slow-mo explosion. Bits fly out in all directions, and keeping track of all the bits gets harder and harder the further they diverge. So it becomes harder and harder to put individual streams of thought
+			together, and to lace the individual solutions and knowledge together to exploit the New.
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 large-article-image" style="background-image: url({{ large-article-image }})">
+			<div class="overlay"></div>
+		</div>
+	</div>
+
+	<div class="col-md-8 col-md-offset-2">
+		My dad was an electronics engineer during the second World War and his specialisation was radio.
+		He told me once that he went into the conflict believing that he knew pretty much all there was to know about radio: the maths, the science, the theory, and much of the practice. However, when he came back in 1945 the science had expanded so
+		<div class="quote right">
+			{{ quote }}
+		</div>
+		dramatically that he felt he only knew about a tenth of what he needed to know. He went further by suggesting that NOBODY knew all of it any more. Now, that wouldn’t necessarily impact on his imagination of what might be possible, but it certainly held him back when he needed to know how to do it. He often claimed that his biggest single contribution to the development of practical electronics
+		was his sand-excluding technology for electrical relays...stretching a condom over them.<br><br>
+		In that solution, we have an interesting analogue to our present condition. It’s the same analogue that allowed the ground station staff during the Apollo 13 mission to work out how to make a carbon dioxide scrubber out of the
+		bits they had on board the stricken spacecraft. The term ‘necessity is the mother of invention’ has never been so appropriate as it is now. Stretch our imagination and it’s suddenly amazing what we can actually do, sometimes with quite modest technological means.
+	</div>
+	{{ /1 }}
+
+	{{ #three-images }}
+	<div class="image-container">
+		<div class="col-md-4" style="padding-left:0">
+			<div class="col-md-12 small-image" style="background-image: url( {{ image1 }})">
+				<div class="overlay"></div>
 			</div>
 		</div>
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-
-		<div class="quote right">
-			He often claimed that his biggest single contribution to the development of practical electronics was his sand-exluding technology for electrical relays... stretching a condom over them.
+		<div class="col-md-4" style="padding:0 7.5px">
+			<div class="col-md-12 small-image" style="background-image: url( {{ image2 }})">
+				<div class="overlay"></div>
+			</div>
 		</div>
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-
-		<div class="quote left">
-			Inventors, that name we'd almost forgotten in our haste to adopt marketing buzzwords, are on the rise again. Inventors- people who spot needs and then get out the toilet rolls and sticky-backed plastic to nail the theory.
-		</div>
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Aliquam erat volutpat. Morbi eget leo lorem, ut placerat nisl. Aenean auctor volutpat condimentum. Morbi adipiscing leo et felis faucibus suscipit nec at odio. Pellentesque convallis turpis non sapien facilisis quis volutpat magna venenatis. Etiam nisi metus, imperdiet vitae lobortis sit amet, pharetra ut leo.
-		<br>
-	</div>
-
-	<div class="col-md-4">
-		<div class="col-md-12 small-image" style="{{ small-image-1 }}">
-			<div class="overlay"></div>
+		<div class="col-md-4" style="padding-right:0">
+			<div class="col-md-12 small-image" style="background-image: url( {{ image3 }})">
+				<div class="overlay"></div>
+			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
-		<div class="col-md-12 small-image" style="{{ small-image-2 }}">
-			<div class="overlay"></div>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="col-md-12 small-image" style="{{ small-image-3 }}">
-			<div class="overlay"></div>
-		</div>
-	</div>
+	{{ /three-images }}
 
+	<div class="col-md-8 col-md-offset-2">
+
+	{{ #2 }}
+	<div class="col-md-12 sub-header-text">{{ sub-heading }}</div>
+	<div class="col-md-12 paragraph">
+	The problems we need to solve here in the 21st century are huge, so we need to choose our fights carefully and be very expansive in our search for solutions. One of my favourites is the guy who worked out that you could rip the laser out of a Blu-ray player and rig it so it would fire, automatically, at the sound
+	<div class="quote left">
+		{{ quote }}
+	</div>
+	of a mosquito, shooting it down. He worked out what was really needed and then hacked his way through other disparate, existing technologies to find out how to do it. Of course now, with the rise of 3D printing, he could whack together the missing structural bits to make it all work should he choose...a
+	sort of ‘bloke in a shed’ approach that we in the UK seem to be so good at (although he wasn’t a Brit and much of the thinking came out of the US Strategic Defense Initiative).<br><br>
+	So here we see where the future is actually forming. Not necessarily in labs and innovation studios, but amongst the hackers and techno-nerds that haunt corners of Kickstarter.<br><br>
+	Inventors, that name we’d almost forgotten in our haste to adopt marketing buzzwords, are on the rise again. Inventors – people who spot needs and then get out the toilet rolls and sticky-backed plastic to nail the theory.
+	</div>
+	{{ /2 }}
+
+	{{ #3 }}
+	<div class="col-md-12 sub-header-text">{{{ sub-heading }}}</div>
+	<div class="col-md-12 paragraph">
+		The web provides us with a fantastic, never-before-experienced-since-the-beginning-of-mankind resource to connect our thinking,
+		but it’s a mistake to believe that this is where imagination comes from in the human brain.<br><br>
+		Engineering expert Robert B. Johnson once said: ‘The world is run by those who show up.’ In this case, we have to stop being so lazy about the future and buckle up for its great challenges.<br><br>
+		Someone once asked how to get the best performance out of me. My reply was: ‘Say to me, “I know that this is impossible but wouldn’t it be great if...”.’ Try it.<br><br>
+		If we design for now, then the future will look like now. It’s time to stand in the future and drag the present towards us, whilst not forgetting that the tools we need to do it probably already exist.
+	</div>
+	{{ /3 }}
+
+	{{ /section}}
+
+	</div>
 </div>
 {{ /article }}
 
@@ -126,8 +159,7 @@
 				</div>
 			</div>
 			<div class="col-sm-3 col-md-8 col-md-offset-1">
-				The Gen Z Project is a qualitative study into an extraordinary new generation (those born after 1995). We’ve spent time with influential members of Gen Z leading progressive lifestyles to illuminate the cultural shifts that they are creating, as the attitudes and behaviours they are forming today will influence the future consumer landscapes of tomorrow.<br><br>
-				This microsite contains a snap shot of our findings.
+				The Gen Z Project is a qualitative study into an extraordinary new generation (those born after 1995). We’ve spent time with influential members of Gen Z leading progressive lifestyles to illuminate the cultural shifts that they are creating, as the attitudes and behaviours they are forming today will influence the future consumer landscapes of tomorrow.
 				<a href="http://www.seymourpowell.com/"><button class="primary-button visit-sp">Explore Seymourpowell</button></a>
 			</div>
 		</div>
@@ -139,7 +171,7 @@
 
 		<a href="#">
 			<div class="previous">
-				<img class="arrow previous" src="./images/left-arrow.png"/>
+				<img class="arrow previous" src="{{./images/left-arrow.png}}"/>
 				<div class="previous-article-text">
 					<span style="font-weight:200">Previous</span><br>
 					RETHINKING CHRISTMAS FOOD WASTE

@@ -1,24 +1,26 @@
 {
-	"site-title": "THOUGHT PIECE",
+	"site-title": "The Violence of the New",
 	"intro": "This is just a placeholder.",
-	"page-title": "Thought Piece",
+	"page-title": "The Violence of the New",
+	"title-image": "./images/lightbulb.jpg",
 	"team": [
 		{
-			"author1": "First Author",
-			"author2": "Second Author",
-			"author3": "Third Author",
-			"author4": "Fourth Author"
+			"author1": "Richard Seymour",
+			"author2": "",
+			"author3": "",
+			"author4": ""
 		}
 	],
-	"publish-date": "DECEMBER 24, 2014",
+	"publish-date": "",
 	"article": [
 		{
-			"heading": "THE VIOLENCE OF THE NEW THE BEST INVENTIONS SPRING FROM NECESSITY, NOT TECHNOLOGY",
-			"introduction": "",
+			"heading": "The best inventions spring from necessity, not technology",
+			"introduction": "And it’s not surprising really. We’re at a very interesting point in history right now. It’s so interesting and dramatic that we may only be able to appreciate its importance ten or 20 years from now. For perhaps only the third time in 600 years, what we can do technologically is stretching miles ahead of our ability to imagine what to do with it. This is having a profound effect on how things change, and the rate at which they do. Effectively, the future proceeds at the rate at which we can assimilate it.",
+			"large-article-image": "./images/apollo-13.jpg",
 			"section": {
 				"1": {
 					"sub-heading": "SLOW-MO EXPLOSIONS",
-					"text" : "",
+					"text" : "In many cases we no longer have to say, ‘If only we had the technology to do this,’ because we already do. We have to say, ‘What is the real need here? And, of a thousand ways of achieving it, which shall we choose?’ Think of this as a slow-mo explosion. Bits fly out in all directions, and keeping track of all the bits gets harder and harder the further they diverge. So it becomes harder and harder to put individual streams of thought together, and to lace the individual solutions and knowledge together to exploit the New. My dad was an electronics engineer during the second World War and his specialisation was radio. He told me once that he went into the conflict believing that he knew pretty much all there was to know about radio: the maths, the science, the theory, and much of the practice. However, when he came back in 1945 the science had expanded so dramatically that he felt he only knew about a tenth of what he needed to know. He went further by suggesting that NOBODY knew all of it any more. Now, that wouldn’t necessarily impact on his imagination of what might be possible, but it certainly held him back when he needed to know how to do it. He often claimed that his biggest single contribution to the development of practical electronics was his sand-excluding technology for electrical relays...stretching a condom over them. In that solution, we have an interesting analogue to our present condition. It’s the same analogue that allowed the ground station staff during the Apollo 13 mission to work out how to make a carbon dioxide scrubber out of the bits they had on board the stricken spacecraft. The term ‘necessity is the mother of invention’ has never been so appropriate as it is now. Stretch our imagination and it’s suddenly amazing what we can actually do, sometimes with quite modest technological means.",
 					"quote": "He often claimed that his biggest single contribution to the development of practical electronics was his sand-exluding technology for electrical relays... stretching a condom over them."
 				},
 				"2": {
@@ -27,7 +29,7 @@
 					"quote": "Inventors, that name we'd almost forgotten in our haste to adopt marketing buzzwords, are on the rise again. Inventors- people who spot needs and then get out the toilet rolls and sticky-backed plastic to nail the theory."
 				},
 				"3": {
-					"sub-heading": "PRAGMATISTS.<br>BROAD-BANDWIDTH THINKERS.<br>TINKERERS. CAN DO-ISTS",
+					"sub-heading": "PRAGMATISTS.<br>BROAD-BANDWIDTH THINKERS.<br>TINKERERS. CAN DO-ISTS.",
 					"text" : "",
 					"quote": ""
 				}
@@ -64,6 +66,13 @@
 					"image": "./images/test-image.jpg"
 				}
 			]
+		}
+	],
+	"three-images": [
+		{
+			"image1": "./images/test-image.jpg",
+			"image2": "./images/test-image.jpg",
+			"image3": "./images/test-image.jpg"
 		}
 	]
 }
