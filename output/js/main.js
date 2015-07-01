@@ -3,6 +3,7 @@ function setTitleContainerHeight() {
   var buttonHeight = 37;
   var setHeight = windowHeight - buttonHeight - 50;
   $('#title-container').css("height", setHeight);
+  $('#title-container .overlay').css("height", setHeight);
 };
 
 function verticallyAlignTitleContent() {

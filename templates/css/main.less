@@ -43,8 +43,8 @@ a:hover {
     margin: 0 auto;
 }
 
-.col-md-8 {
-  max-width: 800px;
+.col-md-10 {
+  max-width: 1000px;
 }
 
 .navbar {
@@ -102,6 +102,15 @@ a:hover {
   opacity: 0.5;
 }
 
+.content .col-md-9 {
+  padding-left: 50px;
+}
+@media screen and (max-width: 736px) {
+  .content .col-md-9 {
+    padding-left: 15px;
+  }
+}
+
 #title-container {
   text-align: center;
   position: relative;
@@ -133,7 +142,7 @@ a:hover {
   margin-right: 20px;
 }
 @media screen and (max-width: 736px) {
-  #introduction-container .information-box {
+  .information-box {
     display: none;
   }
 }
@@ -141,7 +150,15 @@ a:hover {
   margin: 0 auto;
   display: block;
 }
-
+#main-content .col-md-8 {
+  padding: 0 60px;
+  max-width: 700px;
+}
+@media screen and (max-width: 736px) {
+  #main-content .col-md-8 {
+    padding: 0 15px;
+  }
+}
 #main-content .header-text {
   text-align: center;
   font-size: 30px;
@@ -160,7 +177,7 @@ a:hover {
 }
 @media screen and (max-width: 736px) {
   #main-content .sub-header-text {
-    line-height: 5e0px;
+    line-height: 50px;
   }
 }
 #main-content .introduction {
@@ -219,6 +236,14 @@ a:hover {
 @media screen and (max-width: 736px) {
   #main-content .small-image {
     margin: 5px 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #main-content .large-article-image {
+    height: 650px;
+  }
+  #main-content .small-image {
+    height: 250px;
   }
 }
 #bottom-container.container {
@@ -298,6 +323,9 @@ a:hover {
 #bottom-navigation .overlay, .article-information-mobile {
   display: none;
 }
+#bottom-navigation .bottom-nav-wrapper {
+  padding: 15px;
+}
 @media screen and (max-width: 736px) {
   #bottom-navigation.container .previous-article-text {
     width: 125px;
@@ -331,6 +359,7 @@ a:hover {
     color: white;
     z-index: 10;
     margin: 0 auto;
+    display: inline;
   }
   #bottom-navigation .article-type {
     font-size: 20px;
