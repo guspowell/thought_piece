@@ -74,6 +74,8 @@ a:hover {
   padding: 75px 10%;
 }
 
+button:focus {outline:0}
+
 .primary-button {
   font-weight: 600;
   font-size: 15px;
@@ -259,6 +261,9 @@ a:hover {
   color: white;
   background-color: black;
 }
+#black-footer.container .col-md-4 {
+  margin-bottom: 15px;
+}
 
 //****************** BOTTOM NAVIGATION ****************//
 
@@ -327,6 +332,9 @@ a:hover {
   padding: 15px;
 }
 @media screen and (max-width: 736px) {
+  #bottom-navigation.container {
+    padding-bottom: 0;
+  }
   #bottom-navigation .bottom-nav-wrapper {
     padding: 0;
   }
