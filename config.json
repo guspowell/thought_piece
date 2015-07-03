@@ -14,5 +14,10 @@
 			"/css/bottom-navigation.less",
 			"/css/site.less"
 		]
-	}
+	},
+	"generator" : {
+        "skip_paths" : [
+                             "/images/screenshot.png"
+                       ]
+    }
 }
