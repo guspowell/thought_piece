@@ -3,6 +3,9 @@
 ###Introduction
 This is another microsite for seymourpowell. The site is an article written by Richard Seymour, but is also a template for further thought pieces. The site is built such that it can easily be altered for a new article. I've used 'Mustache' so in the future, almost all content can easily be interchanged by simply changing a json file.
 
+###Introduction
+![](/templates/images/screenshot.png)
+
 ###Technologies
 * HTML
 * CSS
